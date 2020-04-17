@@ -1,12 +1,10 @@
+
 pipeline {
-    agent any
-	tools {
-	    Maven 'maven 3.6.3'
-	}
-	stages {
-	  stage ('install') {
-	    steps {
-		  echo ' install maven'
-		}  
-	}
-}	
+ agent any
+ tools {
+  maven 'apache-maven-3.6.3'
+ }
+ stages {
+  ...
+ }
+}
